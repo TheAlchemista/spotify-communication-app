@@ -1,5 +1,6 @@
 package key_listener;
 
+
 // Java imports
 import java.util.logging.Level;
 
@@ -8,17 +9,11 @@ import org.jnativehook.GlobalScreen;
 import org.jnativehook.NativeHookException;
 import org.jnativehook.keyboard.NativeKeyEvent;
 import org.jnativehook.keyboard.NativeKeyListener;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-// Local imports
-import key_listener.DetectKeysRunMethods;
 
 
 public class DetectKeys implements NativeKeyListener {
 
     private DetectKeysRunMethods detectKeysRunMethods;
-    private final Logger logger = LoggerFactory.getLogger(DetectKeys.class);
 
     public DetectKeys(DetectKeysRunMethods detectKeysRunMethods) {
         this.detectKeysRunMethods = detectKeysRunMethods;

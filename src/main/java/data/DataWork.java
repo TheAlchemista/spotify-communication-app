@@ -1,7 +1,9 @@
 package data;
 
+// SpotifyApi imports
 import com.wrapper.spotify.SpotifyHttpManager;
 
+// Java imports
 import java.net.URI;
 
 public class DataWork {
@@ -14,6 +16,6 @@ public class DataWork {
     }
 
     public String getClientSecret() {
-        return "1f9a60efbb66486c983b0b56a597ab3f";
+        return "";
     }
 }

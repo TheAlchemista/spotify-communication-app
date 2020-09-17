@@ -1,5 +1,6 @@
 package app;
 
+
 // Api imports
 import com.wrapper.spotify.SpotifyApi;
 import com.wrapper.spotify.model_objects.credentials.AuthorizationCodeCredentials;
@@ -14,6 +15,7 @@ import serialization.Serialization;
 import key_listener.DetectKeys;
 import key_listener.DetectKeysRunMethods;
 
+
 public final class App {
 
     public static void main(String[] args) {
@@ -25,6 +27,7 @@ public final class App {
         run.run();
     }
 }
+
 
 class Run {
     private Requests requests;

@@ -1,5 +1,6 @@
 package authorization.client_credentials;
 
+
 // First method necessities
 import com.wrapper.spotify.SpotifyApi;
 import com.wrapper.spotify.exceptions.SpotifyWebApiException;

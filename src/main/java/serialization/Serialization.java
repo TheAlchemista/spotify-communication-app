@@ -1,5 +1,6 @@
 package serialization;
 
+
 // Java imports
 import java.io.FileWriter;
 import java.io.IOException;
