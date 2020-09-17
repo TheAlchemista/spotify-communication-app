@@ -6,4 +6,4 @@ To run the app, following dependencies are neccessary:
 2. [Java Development Kit](https://www.oracle.com/java/technologies/javase-downloads.html) - oracle one recommende, but other should work too.
 3. [Apache-Maven](https://maven.apache.org/download.cgi) - used for comilation of project files and adding necessary dependencies listed in pom.xml file. It needs to be added to the sytem PATH variable.
 # Compilation commands
-After cloning the repository, open a Command Prompt in the spotify-communication-app folder. Use 'mvn -B compile' to build the project. It will create necessary .class files in the target directory. Next, use 'mvn exec:java' to run the program.
+After cloning the repository, open a Command Prompt in the spotify-communication-app folder. Use `mvn -B compile` to build the project. It will create necessary .class files in the target directory. Next, use `mvn exec:java` to run the program.
