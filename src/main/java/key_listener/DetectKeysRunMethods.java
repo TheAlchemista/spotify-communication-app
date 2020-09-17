@@ -22,6 +22,8 @@ public class DetectKeysRunMethods {
     public DetectKeysRunMethods(SpotifyApi spotifyApi) {
         mapOfWantedKeys = new HashMap<String, Integer>();
         mapOfWantedKeys.put("Numpad&5", 57420);
+        mapOfWantedKeys.put("Numpad&6", 57421);
+        mapOfWantedKeys.put("Numpad&4", 57419);
         mapOfWantedKeys.put("exit", 3658);
         spotifyApiInteraction = new SpotifyApiInteraction();
         this.spotifyApi = spotifyApi;
@@ -40,6 +42,10 @@ public class DetectKeysRunMethods {
                 spotifyApiInteraction.startResumeUsersPlayback(spotifyApi);
             else if ( event.getKeyCode() == mapOfWantedKeys.get("exit"))
                 spotifyApiInteraction.exit();
+            else if (event.getKeyCode() == mapOfWantedKeys.get("Numpad&6"))
+                spotifyApiInteraction.skipUsersPlaybackToNextTrack(spotifyApi);
+            else if (event.getKeyCode() == mapOfWantedKeys.get("Numpad&4"))
+                spotifyApiInteraction.skipUsersPlaybackToPreviousTrack(spotifyApi);
         }
     }
     
