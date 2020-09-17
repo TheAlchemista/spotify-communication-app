@@ -55,9 +55,6 @@ public class GettingAccessToken {
 
             AuthorizationCodeRequest authorizationCodeRequest = spotifyApi.authorizationCode(authorizationCode).build();
             authorizationCodeCredentials = authorizationCodeRequest.execute();
-
-            // System.out.println("Expires in: " + authorizationCodeCredentials.getExpiresIn()); 
-
         } catch (IOException | SpotifyWebApiException | ParseException e) {
             System.out.println("Error: " + e.getMessage());
         }
@@ -78,7 +75,7 @@ public class GettingAccessToken {
         Boolean timeoutNotExceeded = true;
         String returnString = "";
         // In miliseconds
-        int waitTime = 2000, totalTime = 0, timeoutTime = 30000;
+        int waitTime = 2000, totalTime = 0, timeoutTime = 40000;
 
         while (unproperTitle && timeoutNotExceeded) {
             String title = driver.getTitle();
@@ -99,6 +96,7 @@ public class GettingAccessToken {
                 timeoutNotExceeded = false;
             }
         }
+        driver.quit();
         return returnString;
     }
 
